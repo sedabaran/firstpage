@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Forms Demo</h1>
+
+  <form action= "/food">
+    <label for="username">Kullanıcı adı giriniz:</label>
+    <input type="text" placeholder="Kullanıcı Adı" id="username">
+   <label for="sifre">Şifre giriniz:</label>
+    <input type="password" placeholder="Şifre"id="sifre">
+    <label for="renk">Renk Seçiniz:</label>
+    <input type="color"id="renk">
+        <label for="sayi">Sayı giriniz:</label>
+    <input type="number"id="sayi">
+  </form>
+  <form action="https://www.google.com/search">
+    <label for="google">Google ara</label>
+    <input type="text" id="google" name="q">
+    <button> Google ara</button>
+  </form>
+  <form action="https://www.youtube.com/results">
+    <label for="youtube">Youtube ara</label>
+    <input type="text" id="youtube" name="search_query">
+    <button> Youtube ara</button>
+  </form>
+  <h1>Challenge: Bu Formu Düzeltin</h1>
+<section>
+    <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+        <div>
+            <label for="travel">Tercih edilen seyahat yöntemi:</label>
+            <select name="tasit" id="travel" required>
+                <option disabled selected value="">Seç ... </option>
+                <option value="bike">Bisiklet</option>
+                <option value="car">Araba</option>
+                <option value="train">Tren</option>
+            </select>
+        </div>
+        <div>
+            Seyahat Bütçesi:
+            <input type="radio" id="tutumlu" name="bütçe" value="tutumlu" required/>
+            <label for="tutumlu">Tutumlu</label>
+            <input type="radio" id="orta" name="bütçe" value="orta" />
+            <label for="orta">Orta</label>
+            <input type="radio" id="lüks" name="bütçe" value="lüks">
+            <label for="lüks">Lüks</label>
+        </div>
+        <div>
+            <input type="submit" value="Yolla!" />
+        </div>
+    </form>
+</seciton>
+
+<!-- Aşağıdaki bölümde herhangi bir kodu değiştirmenize gerek yoktur, sadece talimat metnidir -->
+
+<hr/>
+<section>
+    <h2>Talimatlar</h2>
+    <p>Yukarıda gördüğünüz formda birkaç hata var. Codepen'de oturum açmadıysanız, bu Code Challenge'ı (sağ alttaki fork butonunu bulun) kendi hesabınıza alın. Şu hataları bulun ve düzeltin:</p>
+    <ol>
+        <li>Açılır listeden bir seyahat yöntemi seçer ve formu gönderirseniz, sunucudan gelen verilerde değer görünmez. Formu gönderdiğinizde açılır menüden seçtiğiniz değerin görünmesi için bunu nasıl düzeltebilirsiniz?</li>
+        <li>"Tutumlu", "Orta" veya "Lüks" etiketlerine tıklarsanız, ilgili radyo butonuna odaklanmaz. Her bir etikete tıklamak doğru radyo butonuna odaklanacak şekilde bunu nasıl düzeltebilirsiniz?</li>
+        <li>Üç radyo butonunun yalnızca bir seçenek seçebilmelisiniz. Şu anda hem "Orta" hem de "Lüks" radyo butonlarına tıklayabilirsiniz ve ikisi de seçilecektir. Üçünden yalnızca birinin seçilebilmesi için bunu nasıl düzeltebilirsiniz?</li>
+    </ol>
+</section>
+
+<hr/>
+
+<section>
+<h2>Kaynaklar</h2>
+<ul>
+    <li><a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">W3Schools - Form Input Türleri</a> (radyo input  bölümene bakın)</li >
+    <li><a href="https://www.w3schools.com/html/html_form_elements.asp" target="_blank">W3Schools - Form Öğeleri</a> (select/option bölümüne bakın)</li >
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank">MDN - Label</a></li>
+</ul>
+</section>
+</body>
+</html>
